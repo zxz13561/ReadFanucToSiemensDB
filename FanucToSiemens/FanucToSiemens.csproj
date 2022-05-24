@@ -71,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Focas_lib\Fwlib32.lib" />
     <None Include="Properties\Settings.settings">
@@ -91,6 +92,10 @@
     <Content Include="Focas_lib\fwlib30i.dll" />
     <Content Include="Focas_lib\Fwlib32.dll" />
     <Content Include="Focas_lib\fwlibe1.dll" />
+    <Content Include="Light_ball\Gray_light_25.png" />
+    <Content Include="Light_ball\Green_light_25.png" />
+    <Content Include="Light_ball\Red_light_25.png" />
+    <Content Include="Light_ball\Yellow_light_25.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
