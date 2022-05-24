@@ -166,7 +166,7 @@
             this.Tip});
             this.listView_Result.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.listView_Result.GridLines = true;
-            this.listView_Result.Location = new System.Drawing.Point(21, 433);
+            this.listView_Result.Location = new System.Drawing.Point(21, 410);
             this.listView_Result.Name = "listView_Result";
             this.listView_Result.Size = new System.Drawing.Size(731, 344);
             this.listView_Result.TabIndex = 9;
@@ -315,7 +315,7 @@
             this.labelPLCIP.Size = new System.Drawing.Size(196, 42);
             this.labelPLCIP.TabIndex = 15;
             this.labelPLCIP.Text = "PLC IP位址 :";
-            this.labelPLCIP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelPLCIP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // btnPLCWriteDB
             // 
@@ -342,7 +342,7 @@
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(675, 110);
+            this.groupBox1.Location = new System.Drawing.Point(656, 96);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(510, 308);
             this.groupBox1.TabIndex = 21;
@@ -366,13 +366,13 @@
             this.labelDBNum.Size = new System.Drawing.Size(141, 42);
             this.labelDBNum.TabIndex = 21;
             this.labelDBNum.Text = "DB編號:";
-            this.labelDBNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelDBNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelMsg
             // 
             this.labelMsg.AutoSize = true;
             this.labelMsg.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelMsg.Location = new System.Drawing.Point(758, 433);
+            this.labelMsg.Location = new System.Drawing.Point(758, 410);
             this.labelMsg.Name = "labelMsg";
             this.labelMsg.Size = new System.Drawing.Size(82, 22);
             this.labelMsg.TabIndex = 23;
@@ -382,7 +382,7 @@
             // 
             this.listBoxMsg.FormattingEnabled = true;
             this.listBoxMsg.ItemHeight = 15;
-            this.listBoxMsg.Location = new System.Drawing.Point(762, 458);
+            this.listBoxMsg.Location = new System.Drawing.Point(762, 435);
             this.listBoxMsg.Name = "listBoxMsg";
             this.listBoxMsg.Size = new System.Drawing.Size(432, 319);
             this.listBoxMsg.TabIndex = 24;
@@ -403,7 +403,7 @@
             this.groupBox2.Controls.Add(this.txtBoxCNCPath);
             this.groupBox2.Controls.Add(this.labelOffsetType);
             this.groupBox2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox2.Location = new System.Drawing.Point(21, 110);
+            this.groupBox2.Location = new System.Drawing.Point(21, 96);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(629, 308);
             this.groupBox2.TabIndex = 25;
@@ -415,7 +415,7 @@
             this.radioBtnZHTW.AutoSize = true;
             this.radioBtnZHTW.Checked = true;
             this.radioBtnZHTW.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioBtnZHTW.Location = new System.Drawing.Point(6, 29);
+            this.radioBtnZHTW.Location = new System.Drawing.Point(8, 29);
             this.radioBtnZHTW.Name = "radioBtnZHTW";
             this.radioBtnZHTW.Size = new System.Drawing.Size(113, 29);
             this.radioBtnZHTW.TabIndex = 26;
@@ -428,7 +428,7 @@
             // 
             this.radioBtnEN.AutoSize = true;
             this.radioBtnEN.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.radioBtnEN.Location = new System.Drawing.Point(125, 29);
+            this.radioBtnEN.Location = new System.Drawing.Point(134, 29);
             this.radioBtnEN.Name = "radioBtnEN";
             this.radioBtnEN.Size = new System.Drawing.Size(100, 29);
             this.radioBtnEN.TabIndex = 27;
@@ -443,7 +443,7 @@
             this.groupBox3.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.groupBox3.Location = new System.Drawing.Point(21, 12);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(236, 78);
+            this.groupBox3.Size = new System.Drawing.Size(247, 78);
             this.groupBox3.TabIndex = 28;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "顯示語言/Language";
@@ -452,7 +452,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 797);
+            this.ClientSize = new System.Drawing.Size(1215, 767);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.listBoxMsg);

@@ -285,6 +285,7 @@ namespace FanucToSiemens
                 labelDBNum.Font = origin_size;
                 btnPLCConnect.Font = origin_size;
                 btnPLCDisconnect.Font = origin_size;
+                btnPLCWriteDB.Font = origin_size;
 
                 labelCNCIP.Text = "CNC IP位址 :";
                 labelCNCPath.Text = "CNC路徑 :";
@@ -297,7 +298,7 @@ namespace FanucToSiemens
                 labelDBNum.Text = "DB編號:";
                 btnPLCConnect.Text = "連線";
                 btnPLCDisconnect.Text = "中斷";
-
+                btnPLCWriteDB.Text = "寫入PLC DB";
             }
             else if (radioBtnEN.Checked)
             {
