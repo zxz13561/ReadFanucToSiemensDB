@@ -12,7 +12,7 @@ namespace FanucToSiemens
         /// </summary>
         /// <param name="cnc_ip">目標CNC IP</param>
         /// <returns>狀態碼</returns>
-        public static ushort CNC_Connect(string cnc_ip)
+        public static ushort CNC_Connect(string cnc_ip, ushort cnc_port)
         {
             try
             {
@@ -21,7 +21,7 @@ namespace FanucToSiemens
 
                 if (is_IP_Ok.Success)
                 {
-                    if ((Focas1.focas_ret)Focas1.cnc_allclibhndl3(cnc_ip, 8193, 5, out ushort cncHandle) == 0)
+                    if ((Focas1.focas_ret)Focas1.cnc_allclibhndl3(cnc_ip, cnc_port, 5, out ushort cncHandle) == 0)
                         return cncHandle;
                     else
                         return 404; // 連線失敗

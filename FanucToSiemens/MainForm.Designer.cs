@@ -62,23 +62,25 @@
             this.labelMsg = new System.Windows.Forms.Label();
             this.listBoxMsg = new System.Windows.Forms.ListBox();
             this.groupBoxCNC = new System.Windows.Forms.GroupBox();
+            this.labelCNCPort = new System.Windows.Forms.Label();
+            this.textBoxCNCPort = new System.Windows.Forms.TextBox();
             this.radioBtnZHTW = new System.Windows.Forms.RadioButton();
             this.radioBtnEN = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBoxStatus = new System.Windows.Forms.GroupBox();
-            this.lightBall_CNC = new System.Windows.Forms.PictureBox();
-            this.lblStatus_CNC = new System.Windows.Forms.Label();
-            this.lightBall_CNCData = new System.Windows.Forms.PictureBox();
-            this.lblStatus_CNCData = new System.Windows.Forms.Label();
-            this.lightBall_PLC = new System.Windows.Forms.PictureBox();
             this.lblStatus_PLC = new System.Windows.Forms.Label();
+            this.lightBall_PLC = new System.Windows.Forms.PictureBox();
+            this.lblStatus_CNCData = new System.Windows.Forms.Label();
+            this.lightBall_CNCData = new System.Windows.Forms.PictureBox();
+            this.lblStatus_CNC = new System.Windows.Forms.Label();
+            this.lightBall_CNC = new System.Windows.Forms.PictureBox();
             this.groupBoxPLC.SuspendLayout();
             this.groupBoxCNC.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBoxStatus.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNC)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNCData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lightBall_PLC)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNCData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNC)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCNCIP
@@ -103,7 +105,7 @@
             // btnConnect
             // 
             this.btnConnect.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnConnect.Location = new System.Drawing.Point(230, 105);
+            this.btnConnect.Location = new System.Drawing.Point(358, 99);
             this.btnConnect.Name = "btnConnect";
             this.btnConnect.Size = new System.Drawing.Size(106, 57);
             this.btnConnect.TabIndex = 2;
@@ -114,7 +116,7 @@
             // btnDisconnect
             // 
             this.btnDisconnect.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnDisconnect.Location = new System.Drawing.Point(358, 105);
+            this.btnDisconnect.Location = new System.Drawing.Point(486, 99);
             this.btnDisconnect.Name = "btnDisconnect";
             this.btnDisconnect.Size = new System.Drawing.Size(106, 57);
             this.btnDisconnect.TabIndex = 3;
@@ -136,7 +138,7 @@
             // labelCNCPath
             // 
             this.labelCNCPath.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelCNCPath.Location = new System.Drawing.Point(18, 189);
+            this.labelCNCPath.Location = new System.Drawing.Point(53, 173);
             this.labelCNCPath.Name = "labelCNCPath";
             this.labelCNCPath.Size = new System.Drawing.Size(171, 42);
             this.labelCNCPath.TabIndex = 5;
@@ -146,9 +148,9 @@
             // txtBoxCNCPath
             // 
             this.txtBoxCNCPath.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtBoxCNCPath.Location = new System.Drawing.Point(195, 186);
+            this.txtBoxCNCPath.Location = new System.Drawing.Point(230, 170);
             this.txtBoxCNCPath.Name = "txtBoxCNCPath";
-            this.txtBoxCNCPath.Size = new System.Drawing.Size(114, 51);
+            this.txtBoxCNCPath.Size = new System.Drawing.Size(94, 51);
             this.txtBoxCNCPath.TabIndex = 6;
             this.txtBoxCNCPath.Text = "1";
             this.txtBoxCNCPath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -156,7 +158,7 @@
             // btnReadValue
             // 
             this.btnReadValue.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnReadValue.Location = new System.Drawing.Point(358, 182);
+            this.btnReadValue.Location = new System.Drawing.Point(358, 166);
             this.btnReadValue.Name = "btnReadValue";
             this.btnReadValue.Size = new System.Drawing.Size(234, 57);
             this.btnReadValue.TabIndex = 8;
@@ -177,7 +179,7 @@
             this.Tip});
             this.listView_Result.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.listView_Result.GridLines = true;
-            this.listView_Result.Location = new System.Drawing.Point(21, 410);
+            this.listView_Result.Location = new System.Drawing.Point(21, 389);
             this.listView_Result.Name = "listView_Result";
             this.listView_Result.Size = new System.Drawing.Size(731, 344);
             this.listView_Result.TabIndex = 9;
@@ -226,7 +228,7 @@
             // labelOffsetType
             // 
             this.labelOffsetType.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOffsetType.Location = new System.Drawing.Point(18, 250);
+            this.labelOffsetType.Location = new System.Drawing.Point(18, 234);
             this.labelOffsetType.Name = "labelOffsetType";
             this.labelOffsetType.Size = new System.Drawing.Size(103, 42);
             this.labelOffsetType.TabIndex = 10;
@@ -236,7 +238,7 @@
             // labelOffsetNum
             // 
             this.labelOffsetNum.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOffsetNum.Location = new System.Drawing.Point(167, 250);
+            this.labelOffsetNum.Location = new System.Drawing.Point(209, 234);
             this.labelOffsetNum.Name = "labelOffsetNum";
             this.labelOffsetNum.Size = new System.Drawing.Size(100, 42);
             this.labelOffsetNum.TabIndex = 11;
@@ -247,7 +249,7 @@
             // 
             this.labelOuputOffsetType.AutoSize = true;
             this.labelOuputOffsetType.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOuputOffsetType.Location = new System.Drawing.Point(127, 250);
+            this.labelOuputOffsetType.Location = new System.Drawing.Point(127, 234);
             this.labelOuputOffsetType.Name = "labelOuputOffsetType";
             this.labelOuputOffsetType.Size = new System.Drawing.Size(32, 42);
             this.labelOuputOffsetType.TabIndex = 12;
@@ -258,7 +260,7 @@
             // 
             this.labelOuputOffsetNum.AutoSize = true;
             this.labelOuputOffsetNum.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOuputOffsetNum.Location = new System.Drawing.Point(273, 250);
+            this.labelOuputOffsetNum.Location = new System.Drawing.Point(315, 234);
             this.labelOuputOffsetNum.Name = "labelOuputOffsetNum";
             this.labelOuputOffsetNum.Size = new System.Drawing.Size(32, 42);
             this.labelOuputOffsetNum.TabIndex = 13;
@@ -354,7 +356,7 @@
             this.groupBoxPLC.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.groupBoxPLC.Location = new System.Drawing.Point(656, 96);
             this.groupBoxPLC.Name = "groupBoxPLC";
-            this.groupBoxPLC.Size = new System.Drawing.Size(510, 308);
+            this.groupBoxPLC.Size = new System.Drawing.Size(510, 287);
             this.groupBoxPLC.TabIndex = 21;
             this.groupBoxPLC.TabStop = false;
             this.groupBoxPLC.Text = "PLC功能";
@@ -382,7 +384,7 @@
             // 
             this.labelMsg.AutoSize = true;
             this.labelMsg.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelMsg.Location = new System.Drawing.Point(758, 410);
+            this.labelMsg.Location = new System.Drawing.Point(758, 389);
             this.labelMsg.Name = "labelMsg";
             this.labelMsg.Size = new System.Drawing.Size(82, 22);
             this.labelMsg.TabIndex = 23;
@@ -392,13 +394,15 @@
             // 
             this.listBoxMsg.FormattingEnabled = true;
             this.listBoxMsg.ItemHeight = 15;
-            this.listBoxMsg.Location = new System.Drawing.Point(762, 435);
+            this.listBoxMsg.Location = new System.Drawing.Point(762, 414);
             this.listBoxMsg.Name = "listBoxMsg";
             this.listBoxMsg.Size = new System.Drawing.Size(432, 319);
             this.listBoxMsg.TabIndex = 24;
             // 
             // groupBoxCNC
             // 
+            this.groupBoxCNC.Controls.Add(this.labelCNCPort);
+            this.groupBoxCNC.Controls.Add(this.textBoxCNCPort);
             this.groupBoxCNC.Controls.Add(this.btnDisconnect);
             this.groupBoxCNC.Controls.Add(this.labelCNCIP);
             this.groupBoxCNC.Controls.Add(this.txtBoxIP);
@@ -413,10 +417,30 @@
             this.groupBoxCNC.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.groupBoxCNC.Location = new System.Drawing.Point(21, 96);
             this.groupBoxCNC.Name = "groupBoxCNC";
-            this.groupBoxCNC.Size = new System.Drawing.Size(629, 308);
+            this.groupBoxCNC.Size = new System.Drawing.Size(629, 287);
             this.groupBoxCNC.TabIndex = 25;
             this.groupBoxCNC.TabStop = false;
             this.groupBoxCNC.Text = "CNC功能";
+            // 
+            // labelCNCPort
+            // 
+            this.labelCNCPort.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.labelCNCPort.Location = new System.Drawing.Point(18, 106);
+            this.labelCNCPort.Name = "labelCNCPort";
+            this.labelCNCPort.Size = new System.Drawing.Size(208, 42);
+            this.labelCNCPort.TabIndex = 15;
+            this.labelCNCPort.Text = "CNC Port :";
+            this.labelCNCPort.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // textBoxCNCPort
+            // 
+            this.textBoxCNCPort.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.textBoxCNCPort.Location = new System.Drawing.Point(232, 103);
+            this.textBoxCNCPort.Name = "textBoxCNCPort";
+            this.textBoxCNCPort.Size = new System.Drawing.Size(92, 51);
+            this.textBoxCNCPort.TabIndex = 14;
+            this.textBoxCNCPort.Text = "8193";
+            this.textBoxCNCPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // radioBtnZHTW
             // 
@@ -474,6 +498,56 @@
             this.groupBoxStatus.TabStop = false;
             this.groupBoxStatus.Text = "運行狀態";
             // 
+            // lblStatus_PLC
+            // 
+            this.lblStatus_PLC.AutoSize = true;
+            this.lblStatus_PLC.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblStatus_PLC.Location = new System.Drawing.Point(673, 31);
+            this.lblStatus_PLC.Name = "lblStatus_PLC";
+            this.lblStatus_PLC.Size = new System.Drawing.Size(57, 25);
+            this.lblStatus_PLC.TabIndex = 5;
+            this.lblStatus_PLC.Text = "PLC :";
+            // 
+            // lightBall_PLC
+            // 
+            this.lightBall_PLC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.lightBall_PLC.Image = global::FanucToSiemens.Properties.Resources.Red_light_25;
+            this.lightBall_PLC.Location = new System.Drawing.Point(642, 33);
+            this.lightBall_PLC.Name = "lightBall_PLC";
+            this.lightBall_PLC.Size = new System.Drawing.Size(25, 25);
+            this.lightBall_PLC.TabIndex = 4;
+            this.lightBall_PLC.TabStop = false;
+            // 
+            // lblStatus_CNCData
+            // 
+            this.lblStatus_CNCData.AutoSize = true;
+            this.lblStatus_CNCData.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblStatus_CNCData.Location = new System.Drawing.Point(345, 33);
+            this.lblStatus_CNCData.Name = "lblStatus_CNCData";
+            this.lblStatus_CNCData.Size = new System.Drawing.Size(113, 25);
+            this.lblStatus_CNCData.TabIndex = 3;
+            this.lblStatus_CNCData.Text = "CNC Data :";
+            // 
+            // lightBall_CNCData
+            // 
+            this.lightBall_CNCData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.lightBall_CNCData.Image = global::FanucToSiemens.Properties.Resources.Red_light_25;
+            this.lightBall_CNCData.Location = new System.Drawing.Point(314, 33);
+            this.lightBall_CNCData.Name = "lightBall_CNCData";
+            this.lightBall_CNCData.Size = new System.Drawing.Size(25, 25);
+            this.lightBall_CNCData.TabIndex = 2;
+            this.lightBall_CNCData.TabStop = false;
+            // 
+            // lblStatus_CNC
+            // 
+            this.lblStatus_CNC.AutoSize = true;
+            this.lblStatus_CNC.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.lblStatus_CNC.Location = new System.Drawing.Point(62, 33);
+            this.lblStatus_CNC.Name = "lblStatus_CNC";
+            this.lblStatus_CNC.Size = new System.Drawing.Size(64, 25);
+            this.lblStatus_CNC.TabIndex = 1;
+            this.lblStatus_CNC.Text = "CNC :";
+            // 
             // lightBall_CNC
             // 
             this.lightBall_CNC.AccessibleName = "";
@@ -486,61 +560,11 @@
             this.lightBall_CNC.TabIndex = 0;
             this.lightBall_CNC.TabStop = false;
             // 
-            // lblStatus_CNC
-            // 
-            this.lblStatus_CNC.AutoSize = true;
-            this.lblStatus_CNC.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblStatus_CNC.Location = new System.Drawing.Point(62, 33);
-            this.lblStatus_CNC.Name = "lblStatus_CNC";
-            this.lblStatus_CNC.Size = new System.Drawing.Size(64, 25);
-            this.lblStatus_CNC.TabIndex = 1;
-            this.lblStatus_CNC.Text = "CNC :";
-            // 
-            // lightBall_CNCData
-            // 
-            this.lightBall_CNCData.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.lightBall_CNCData.Image = global::FanucToSiemens.Properties.Resources.Red_light_25;
-            this.lightBall_CNCData.Location = new System.Drawing.Point(314, 33);
-            this.lightBall_CNCData.Name = "lightBall_CNCData";
-            this.lightBall_CNCData.Size = new System.Drawing.Size(25, 25);
-            this.lightBall_CNCData.TabIndex = 2;
-            this.lightBall_CNCData.TabStop = false;
-            // 
-            // lblStatus_CNCData
-            // 
-            this.lblStatus_CNCData.AutoSize = true;
-            this.lblStatus_CNCData.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblStatus_CNCData.Location = new System.Drawing.Point(345, 33);
-            this.lblStatus_CNCData.Name = "lblStatus_CNCData";
-            this.lblStatus_CNCData.Size = new System.Drawing.Size(113, 25);
-            this.lblStatus_CNCData.TabIndex = 3;
-            this.lblStatus_CNCData.Text = "CNC Data :";
-            // 
-            // lightBall_PLC
-            // 
-            this.lightBall_PLC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.lightBall_PLC.Image = global::FanucToSiemens.Properties.Resources.Red_light_25;
-            this.lightBall_PLC.Location = new System.Drawing.Point(642, 33);
-            this.lightBall_PLC.Name = "lightBall_PLC";
-            this.lightBall_PLC.Size = new System.Drawing.Size(25, 25);
-            this.lightBall_PLC.TabIndex = 4;
-            this.lightBall_PLC.TabStop = false;
-            // 
-            // lblStatus_PLC
-            // 
-            this.lblStatus_PLC.AutoSize = true;
-            this.lblStatus_PLC.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.lblStatus_PLC.Location = new System.Drawing.Point(673, 31);
-            this.lblStatus_PLC.Name = "lblStatus_PLC";
-            this.lblStatus_PLC.Size = new System.Drawing.Size(57, 25);
-            this.lblStatus_PLC.TabIndex = 5;
-            this.lblStatus_PLC.Text = "PLC :";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1215, 767);
+            this.ClientSize = new System.Drawing.Size(1215, 749);
             this.Controls.Add(this.groupBoxStatus);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBoxCNC);
@@ -560,9 +584,9 @@
             this.groupBox3.PerformLayout();
             this.groupBoxStatus.ResumeLayout(false);
             this.groupBoxStatus.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNC)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNCData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lightBall_PLC)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNCData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNC)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -614,6 +638,8 @@
         private System.Windows.Forms.Label lblStatus_CNCData;
         private System.Windows.Forms.PictureBox lightBall_CNCData;
         private System.Windows.Forms.PictureBox lightBall_CNC;
+        private System.Windows.Forms.Label labelCNCPort;
+        private System.Windows.Forms.TextBox textBoxCNCPort;
     }
 }
 

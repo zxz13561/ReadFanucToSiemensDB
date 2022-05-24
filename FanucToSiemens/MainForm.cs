@@ -60,7 +60,14 @@ namespace FanucToSiemens
             ShowAllMsg("CNC Connecting...");
             try
             {
-                ushort connect_result = FocasFunctions.CNC_Connect(txtBoxIP.Text);
+                if(!ushort.TryParse(textBoxCNCPort.Text, out ushort CNC_Port))
+                {
+                    ShowAllMsg("Error : Port Number Parse to ushort error");
+                    lightBall_CNC.Image = Properties.Resources.Yellow_light_25;
+                    return;
+                }
+
+                ushort connect_result = FocasFunctions.CNC_Connect(txtBoxIP.Text, CNC_Port);
                 switch (connect_result)
                 {
                     case 404:
