@@ -21,7 +21,7 @@ namespace FanucToSiemens
             {
                 int Rack = 0;
                 int Slot = 0;
-                int code = (Client.ConnectTo(PLC_IP, Rack, Slot));
+                int code = Client.ConnectTo(PLC_IP, Rack, Slot); 
                 return Client.ErrorText(code);
             }
             catch (Exception ex)

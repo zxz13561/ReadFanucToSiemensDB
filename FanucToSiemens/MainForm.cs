@@ -14,12 +14,21 @@ namespace FanucToSiemens
         List<CNCToolOffsetModel> value_List = null;
         // PLC 變數
         private S7Client Client;
+        private bool missingPLCdll = false;
 
         #region Form Initial Functions
         public MainForm()
         {
             InitializeComponent();
-            Client = new S7Client();
+            try
+            {
+                Client = new S7Client();
+            }
+            catch (Exception ex)
+            {
+                missingPLCdll = true;
+                ShowAllMsg(ex.ToString());
+            }   
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,9 +39,18 @@ namespace FanucToSiemens
             txtBoxPLCIP.Text = Properties.Settings.Default.PLC_IP;
             txtBoxPLC_DBNum.Text = Properties.Settings.Default.PLC_DB_Num;
 
-            // 顯示完成載入
-            listBoxMsg.Items.Add(DateTime.Now.ToString() + " | Program Ready");
-            listBoxMsg.TopIndex = listBoxMsg.Items.Count - 1;
+            if (!missingPLCdll)
+            {
+                // 顯示完成載入
+                listBoxMsg.Items.Add(DateTime.Now.ToString() + " | Program Ready");
+                listBoxMsg.TopIndex = listBoxMsg.Items.Count - 1;
+            }
+            else
+            {
+                // 顯示完成載入
+                listBoxMsg.Items.Add(DateTime.Now.ToString() + " | PLC S7 dll file missing");
+                listBoxMsg.TopIndex = listBoxMsg.Items.Count - 1;
+            }
         }
         #endregion
 
