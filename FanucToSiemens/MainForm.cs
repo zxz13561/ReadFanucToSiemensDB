@@ -66,11 +66,13 @@ namespace FanucToSiemens
                     case 404:
                         labelConnectStatus.Text = "連線失敗";
                         ShowAllMsg("Error : CNC Connect Fail");
+                        lightBall_CNC.Image = Properties.Resources.Red_light_25;
                         break;
 
                     case 405:
                         labelConnectStatus.Text = "IP格式錯誤";
                         ShowAllMsg("Error : CNC Wrong IP format");
+                        lightBall_CNC.Image = Properties.Resources.Yellow_light_25;
                         break;
 
                     default:
@@ -78,6 +80,7 @@ namespace FanucToSiemens
                         connectStatus = true;
                         labelConnectStatus.Text = "連線成功";
                         ShowAllMsg("CNC Connect Success");
+                        lightBall_CNC.Image = Properties.Resources.Green_light_25;
                         break;
                 }
             }
@@ -104,18 +107,20 @@ namespace FanucToSiemens
                     labelConnectStatus.Text = "尚未連線";
                     value_List = null;
                     ShowAllMsg("Error : CNC Not Connecting");
-
+                    lightBall_CNC.Image = Properties.Resources.Red_light_25;
                 }
                 else
-                {
+                {                   
                     labelConnectStatus.Text = "中斷失敗";
                     ShowAllMsg("Error : CNC Disconnect Fail");
+                    lightBall_CNC.Image = Properties.Resources.Yellow_light_25;
                 }              
             }
             else
-            {
+            {                
                 labelConnectStatus.Text = "請先與機台連線";
                 ShowAllMsg("Error : CNC Not Connecting");
+                lightBall_CNC.Image = Properties.Resources.Yellow_light_25;
             }               
         }
 
@@ -130,6 +135,7 @@ namespace FanucToSiemens
             if (!connectStatus)
             {
                 ShowAllMsg("Error : CNC Not Connecting");
+                lightBall_CNCData.Image = Properties.Resources.Red_light_25;
                 return;
             }
                 
@@ -152,6 +158,7 @@ namespace FanucToSiemens
             else
             {
                 labelViewListStatus.Text = connectStatus ? read_Result[0] : "尚未連線";
+                lightBall_CNCData.Image = Properties.Resources.Red_light_25;
                 labelOuputOffsetType.Text = "-";
                 labelOuputOffsetNum.Text = "-";
                 return;
@@ -162,6 +169,7 @@ namespace FanucToSiemens
             {
                 labelViewListStatus.Text = "讀取成功";
                 ShowAllMsg("Getting CNC Offset Data Successfully");
+                lightBall_CNCData.Image = Properties.Resources.Green_light_25;
 
                 int index = 1;
                 // 寫入ViewList
@@ -190,6 +198,7 @@ namespace FanucToSiemens
             {
                 labelViewListStatus.Text = connectStatus?"讀取失敗":"請先與機台連線"; ;
                 ShowAllMsg("Error: CNC Reading Fail");
+                lightBall_CNCData.Image = Properties.Resources.Yellow_light_25;
             }
         }
 
@@ -198,6 +207,7 @@ namespace FanucToSiemens
             ShowAllMsg("PLC Connecting...");
 
             labelPLCConnectStatus.Text = PLCFunctions.ConnectPLC(Client, txtBoxPLCIP.Text);
+            lightBall_PLC.Image = labelPLCConnectStatus.Text == "OK" ? Properties.Resources.Green_light_25 : Properties.Resources.Red_light_25;
 
             ShowAllMsg(labelPLCConnectStatus.Text);
         }
@@ -208,8 +218,9 @@ namespace FanucToSiemens
 
             string return_msg = PLCFunctions.DisconnectPLC(Client);
             labelPLCConnectStatus.Text = return_msg == "OK" ? "已中斷" : return_msg;
+            lightBall_PLC.Image = return_msg == "OK" ? Properties.Resources.Red_light_25 : Properties.Resources.Yellow_light_25;
 
-            ShowAllMsg(labelPLCConnectStatus.Text);
+            ShowAllMsg("PLC Disconnect " + return_msg);
         }
 
         private void btnPLCWriteDB_Click(object sender, EventArgs e)
@@ -334,5 +345,6 @@ namespace FanucToSiemens
             }
         }
         #endregion
+
     }
 }

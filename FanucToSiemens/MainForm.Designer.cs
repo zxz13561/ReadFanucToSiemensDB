@@ -476,7 +476,9 @@
             // 
             // lightBall_CNC
             // 
+            this.lightBall_CNC.AccessibleName = "";
             this.lightBall_CNC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.lightBall_CNC.Cursor = System.Windows.Forms.Cursors.Default;
             this.lightBall_CNC.Image = global::FanucToSiemens.Properties.Resources.Red_light_25;
             this.lightBall_CNC.Location = new System.Drawing.Point(31, 33);
             this.lightBall_CNC.Name = "lightBall_CNC";
@@ -606,12 +608,12 @@
         private System.Windows.Forms.RadioButton radioBtnEN;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBoxStatus;
-        private System.Windows.Forms.PictureBox lightBall_CNC;
         private System.Windows.Forms.Label lblStatus_CNC;
         private System.Windows.Forms.Label lblStatus_PLC;
         private System.Windows.Forms.PictureBox lightBall_PLC;
         private System.Windows.Forms.Label lblStatus_CNCData;
         private System.Windows.Forms.PictureBox lightBall_CNCData;
+        private System.Windows.Forms.PictureBox lightBall_CNC;
     }
 }
 
