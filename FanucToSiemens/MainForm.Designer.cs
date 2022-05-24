@@ -62,25 +62,28 @@
             this.labelMsg = new System.Windows.Forms.Label();
             this.listBoxMsg = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioBtnZHTW = new System.Windows.Forms.RadioButton();
+            this.radioBtnEN = new System.Windows.Forms.RadioButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelCNCIP
             // 
-            this.labelCNCIP.AutoSize = true;
             this.labelCNCIP.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelCNCIP.Location = new System.Drawing.Point(18, 39);
             this.labelCNCIP.Name = "labelCNCIP";
             this.labelCNCIP.Size = new System.Drawing.Size(208, 42);
             this.labelCNCIP.TabIndex = 0;
             this.labelCNCIP.Text = "CNC IP位址 :";
-            this.labelCNCIP.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelCNCIP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtBoxIP
             // 
             this.txtBoxIP.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtBoxIP.Location = new System.Drawing.Point(240, 36);
+            this.txtBoxIP.Location = new System.Drawing.Point(232, 36);
             this.txtBoxIP.Name = "txtBoxIP";
             this.txtBoxIP.Size = new System.Drawing.Size(261, 51);
             this.txtBoxIP.TabIndex = 1;
@@ -121,14 +124,13 @@
             // 
             // labelCNCPath
             // 
-            this.labelCNCPath.AutoSize = true;
             this.labelCNCPath.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelCNCPath.Location = new System.Drawing.Point(18, 189);
             this.labelCNCPath.Name = "labelCNCPath";
             this.labelCNCPath.Size = new System.Drawing.Size(171, 42);
             this.labelCNCPath.TabIndex = 5;
             this.labelCNCPath.Text = "CNC路徑 :";
-            this.labelCNCPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelCNCPath.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // txtBoxCNCPath
             // 
@@ -164,7 +166,7 @@
             this.Tip});
             this.listView_Result.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.listView_Result.GridLines = true;
-            this.listView_Result.Location = new System.Drawing.Point(25, 350);
+            this.listView_Result.Location = new System.Drawing.Point(21, 433);
             this.listView_Result.Name = "listView_Result";
             this.listView_Result.Size = new System.Drawing.Size(731, 344);
             this.listView_Result.TabIndex = 9;
@@ -212,31 +214,29 @@
             // 
             // labelOffsetType
             // 
-            this.labelOffsetType.AutoSize = true;
             this.labelOffsetType.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOffsetType.Location = new System.Drawing.Point(18, 253);
+            this.labelOffsetType.Location = new System.Drawing.Point(18, 250);
             this.labelOffsetType.Name = "labelOffsetType";
-            this.labelOffsetType.Size = new System.Drawing.Size(100, 42);
+            this.labelOffsetType.Size = new System.Drawing.Size(103, 42);
             this.labelOffsetType.TabIndex = 10;
             this.labelOffsetType.Text = "種類 :";
-            this.labelOffsetType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelOffsetType.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelOffsetNum
             // 
-            this.labelOffsetNum.AutoSize = true;
             this.labelOffsetNum.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOffsetNum.Location = new System.Drawing.Point(188, 253);
+            this.labelOffsetNum.Location = new System.Drawing.Point(167, 250);
             this.labelOffsetNum.Name = "labelOffsetNum";
             this.labelOffsetNum.Size = new System.Drawing.Size(100, 42);
             this.labelOffsetNum.TabIndex = 11;
             this.labelOffsetNum.Text = "總數 :";
-            this.labelOffsetNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.labelOffsetNum.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // labelOuputOffsetType
             // 
             this.labelOuputOffsetType.AutoSize = true;
             this.labelOuputOffsetType.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOuputOffsetType.Location = new System.Drawing.Point(124, 253);
+            this.labelOuputOffsetType.Location = new System.Drawing.Point(127, 250);
             this.labelOuputOffsetType.Name = "labelOuputOffsetType";
             this.labelOuputOffsetType.Size = new System.Drawing.Size(32, 42);
             this.labelOuputOffsetType.TabIndex = 12;
@@ -247,7 +247,7 @@
             // 
             this.labelOuputOffsetNum.AutoSize = true;
             this.labelOuputOffsetNum.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelOuputOffsetNum.Location = new System.Drawing.Point(294, 253);
+            this.labelOuputOffsetNum.Location = new System.Drawing.Point(273, 250);
             this.labelOuputOffsetNum.Name = "labelOuputOffsetNum";
             this.labelOuputOffsetNum.Size = new System.Drawing.Size(32, 42);
             this.labelOuputOffsetNum.TabIndex = 13;
@@ -309,7 +309,6 @@
             // 
             // labelPLCIP
             // 
-            this.labelPLCIP.AutoSize = true;
             this.labelPLCIP.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelPLCIP.Location = new System.Drawing.Point(10, 52);
             this.labelPLCIP.Name = "labelPLCIP";
@@ -321,7 +320,7 @@
             // btnPLCWriteDB
             // 
             this.btnPLCWriteDB.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnPLCWriteDB.Location = new System.Drawing.Point(248, 231);
+            this.btnPLCWriteDB.Location = new System.Drawing.Point(255, 235);
             this.btnPLCWriteDB.Name = "btnPLCWriteDB";
             this.btnPLCWriteDB.Size = new System.Drawing.Size(239, 57);
             this.btnPLCWriteDB.TabIndex = 20;
@@ -343,7 +342,7 @@
             this.groupBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(683, 17);
+            this.groupBox1.Location = new System.Drawing.Point(675, 110);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(510, 308);
             this.groupBox1.TabIndex = 21;
@@ -353,7 +352,7 @@
             // txtBoxPLC_DBNum
             // 
             this.txtBoxPLC_DBNum.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtBoxPLC_DBNum.Location = new System.Drawing.Point(153, 235);
+            this.txtBoxPLC_DBNum.Location = new System.Drawing.Point(157, 235);
             this.txtBoxPLC_DBNum.Name = "txtBoxPLC_DBNum";
             this.txtBoxPLC_DBNum.Size = new System.Drawing.Size(78, 51);
             this.txtBoxPLC_DBNum.TabIndex = 22;
@@ -361,11 +360,10 @@
             // 
             // labelDBNum
             // 
-            this.labelDBNum.AutoSize = true;
             this.labelDBNum.Font = new System.Drawing.Font("微軟正黑體", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.labelDBNum.Location = new System.Drawing.Point(10, 238);
             this.labelDBNum.Name = "labelDBNum";
-            this.labelDBNum.Size = new System.Drawing.Size(137, 42);
+            this.labelDBNum.Size = new System.Drawing.Size(141, 42);
             this.labelDBNum.TabIndex = 21;
             this.labelDBNum.Text = "DB編號:";
             this.labelDBNum.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -374,7 +372,7 @@
             // 
             this.labelMsg.AutoSize = true;
             this.labelMsg.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.labelMsg.Location = new System.Drawing.Point(774, 350);
+            this.labelMsg.Location = new System.Drawing.Point(758, 433);
             this.labelMsg.Name = "labelMsg";
             this.labelMsg.Size = new System.Drawing.Size(82, 22);
             this.labelMsg.TabIndex = 23;
@@ -384,7 +382,7 @@
             // 
             this.listBoxMsg.FormattingEnabled = true;
             this.listBoxMsg.ItemHeight = 15;
-            this.listBoxMsg.Location = new System.Drawing.Point(778, 375);
+            this.listBoxMsg.Location = new System.Drawing.Point(762, 458);
             this.listBoxMsg.Name = "listBoxMsg";
             this.listBoxMsg.Size = new System.Drawing.Size(432, 319);
             this.listBoxMsg.TabIndex = 24;
@@ -405,18 +403,57 @@
             this.groupBox2.Controls.Add(this.txtBoxCNCPath);
             this.groupBox2.Controls.Add(this.labelOffsetType);
             this.groupBox2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox2.Location = new System.Drawing.Point(25, 17);
+            this.groupBox2.Location = new System.Drawing.Point(21, 110);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(629, 308);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "CNC功能";
             // 
+            // radioBtnZHTW
+            // 
+            this.radioBtnZHTW.AutoSize = true;
+            this.radioBtnZHTW.Checked = true;
+            this.radioBtnZHTW.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioBtnZHTW.Location = new System.Drawing.Point(6, 29);
+            this.radioBtnZHTW.Name = "radioBtnZHTW";
+            this.radioBtnZHTW.Size = new System.Drawing.Size(113, 29);
+            this.radioBtnZHTW.TabIndex = 26;
+            this.radioBtnZHTW.TabStop = true;
+            this.radioBtnZHTW.Text = "繁體中文";
+            this.radioBtnZHTW.UseVisualStyleBackColor = true;
+            this.radioBtnZHTW.CheckedChanged += new System.EventHandler(this.radioBtnZHTW_CheckedChanged);
+            // 
+            // radioBtnEN
+            // 
+            this.radioBtnEN.AutoSize = true;
+            this.radioBtnEN.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.radioBtnEN.Location = new System.Drawing.Point(125, 29);
+            this.radioBtnEN.Name = "radioBtnEN";
+            this.radioBtnEN.Size = new System.Drawing.Size(100, 29);
+            this.radioBtnEN.TabIndex = 27;
+            this.radioBtnEN.Text = "English";
+            this.radioBtnEN.UseVisualStyleBackColor = true;
+            this.radioBtnEN.CheckedChanged += new System.EventHandler(this.radioBtnEN_CheckedChanged);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.radioBtnEN);
+            this.groupBox3.Controls.Add(this.radioBtnZHTW);
+            this.groupBox3.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.groupBox3.Location = new System.Drawing.Point(21, 12);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(236, 78);
+            this.groupBox3.TabIndex = 28;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "顯示語言/Language";
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1236, 718);
+            this.ClientSize = new System.Drawing.Size(1215, 797);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.listBoxMsg);
             this.Controls.Add(this.labelMsg);
@@ -430,6 +467,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -471,6 +510,9 @@
         private System.Windows.Forms.TextBox txtBoxPLC_DBNum;
         private System.Windows.Forms.Label labelDBNum;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton radioBtnZHTW;
+        private System.Windows.Forms.RadioButton radioBtnEN;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

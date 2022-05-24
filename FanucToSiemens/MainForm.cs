@@ -241,6 +241,16 @@ namespace FanucToSiemens
             Properties.Settings.Default.PLC_DB_Num = txtBoxPLC_DBNum.Text;
             Properties.Settings.Default.Save();
         }
+
+        private void radioBtnZHTW_CheckedChanged(object sender, EventArgs e)
+        {
+            ChangeLanguage();
+        }
+
+        private void radioBtnEN_CheckedChanged(object sender, EventArgs e)
+        {
+            ChangeLanguage();
+        }
         #endregion
 
         #region Sub-Functions
@@ -255,7 +265,72 @@ namespace FanucToSiemens
             listBoxMsg.TopIndex = listBoxMsg.Items.Count - 1;
         }
 
+        /// <summary>
+        /// 變更顯示語言
+        /// </summary>
+        public void ChangeLanguage()
+        {
+            if (radioBtnZHTW.Checked)
+            {
+                System.Drawing.Font origin_size = new System.Drawing.Font("微軟正黑體", 19);
 
+                labelCNCIP.Font = origin_size;
+                labelCNCPath.Font = origin_size;
+                labelOffsetType.Font = origin_size;
+                labelOffsetNum.Font = origin_size;
+                btnConnect.Font = origin_size;
+                btnDisconnect.Font = origin_size;
+                btnReadValue.Font = origin_size;
+                labelPLCIP.Font = origin_size;
+                labelDBNum.Font = origin_size;
+                btnPLCConnect.Font = origin_size;
+                btnPLCDisconnect.Font = origin_size;
+
+                labelCNCIP.Text = "CNC IP位址 :";
+                labelCNCPath.Text = "CNC路徑 :";
+                labelOffsetType.Text = "種類:";
+                labelOffsetNum.Text = "總數:";
+                btnConnect.Text = "連線";
+                btnDisconnect.Text = "中斷";
+                btnReadValue.Text = "讀取補正數值";
+                labelPLCIP.Text = "PLC IP位址 :";
+                labelDBNum.Text = "DB編號:";
+                btnPLCConnect.Text = "連線";
+                btnPLCDisconnect.Text = "中斷";
+
+            }
+            else if (radioBtnEN.Checked)
+            {
+                System.Drawing.Font size14 = new System.Drawing.Font("微軟正黑體", 14);
+                System.Drawing.Font size10 = new System.Drawing.Font("微軟正黑體", 10);
+
+                labelCNCIP.Font = size14;
+                labelCNCPath.Font = size14;
+                labelOffsetType.Font = size14;
+                labelOffsetNum.Font = size14;
+                btnConnect.Font = size10;
+                btnDisconnect.Font = size10;
+                btnReadValue.Font = size14;
+                labelPLCIP.Font = size14;
+                labelDBNum.Font = size14;
+                btnPLCConnect.Font = size10;
+                btnPLCDisconnect.Font = size10;
+                btnPLCWriteDB.Font = size14;
+
+                labelCNCIP.Text = "CNC IP Address :";
+                labelCNCPath.Text = "CNC Path :";
+                labelOffsetType.Text = "Type :";
+                labelOffsetNum.Text = "Count :";
+                btnConnect.Text = "Connect";
+                btnDisconnect.Text = "Disconnect";
+                btnReadValue.Text = "Get Offset Data";
+                labelPLCIP.Text = "PLC IP Address :";
+                labelDBNum.Text = "DB Num :";
+                btnPLCConnect.Text = "Connect";
+                btnPLCDisconnect.Text = "Disconnect";
+                btnPLCWriteDB.Text = "Transfer to PLC DB";
+            }
+        }
         #endregion
     }
 }
