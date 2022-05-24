@@ -243,12 +243,7 @@ namespace FanucToSiemens
         }
 
         private void radioBtnZHTW_CheckedChanged(object sender, EventArgs e)
-        {
-            ChangeLanguage();
-        }
-
-        private void radioBtnEN_CheckedChanged(object sender, EventArgs e)
-        {
+        {          
             ChangeLanguage();
         }
         #endregion
@@ -272,6 +267,7 @@ namespace FanucToSiemens
         {
             if (radioBtnZHTW.Checked)
             {
+                ShowAllMsg("Change to Chinese");
                 System.Drawing.Font origin_size = new System.Drawing.Font("微軟正黑體", 19);
 
                 labelCNCIP.Font = origin_size;
@@ -299,9 +295,12 @@ namespace FanucToSiemens
                 btnPLCConnect.Text = "連線";
                 btnPLCDisconnect.Text = "中斷";
                 btnPLCWriteDB.Text = "寫入PLC DB";
+                groupBoxCNC.Text = "CNC功能";
+                groupBoxPLC.Text = "PLC功能";
             }
             else if (radioBtnEN.Checked)
             {
+                ShowAllMsg("Change to English");
                 System.Drawing.Font size14 = new System.Drawing.Font("微軟正黑體", 14);
                 System.Drawing.Font size10 = new System.Drawing.Font("微軟正黑體", 10);
 
@@ -330,6 +329,8 @@ namespace FanucToSiemens
                 btnPLCConnect.Text = "Connect";
                 btnPLCDisconnect.Text = "Disconnect";
                 btnPLCWriteDB.Text = "Transfer to PLC DB";
+                groupBoxCNC.Text = "CNC Function";
+                groupBoxPLC.Text = "PLC Function";
             }
         }
         #endregion

@@ -56,17 +56,17 @@
             this.txtBoxPLCIP = new System.Windows.Forms.TextBox();
             this.labelPLCIP = new System.Windows.Forms.Label();
             this.btnPLCWriteDB = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxPLC = new System.Windows.Forms.GroupBox();
             this.txtBoxPLC_DBNum = new System.Windows.Forms.TextBox();
             this.labelDBNum = new System.Windows.Forms.Label();
             this.labelMsg = new System.Windows.Forms.Label();
             this.listBoxMsg = new System.Windows.Forms.ListBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxCNC = new System.Windows.Forms.GroupBox();
             this.radioBtnZHTW = new System.Windows.Forms.RadioButton();
             this.radioBtnEN = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxPLC.SuspendLayout();
+            this.groupBoxCNC.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -328,26 +328,26 @@
             this.btnPLCWriteDB.UseVisualStyleBackColor = true;
             this.btnPLCWriteDB.Click += new System.EventHandler(this.btnPLCWriteDB_Click);
             // 
-            // groupBox1
+            // groupBoxPLC
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Controls.Add(this.txtBoxPLC_DBNum);
-            this.groupBox1.Controls.Add(this.labelDBNum);
-            this.groupBox1.Controls.Add(this.btnPLCWriteDB);
-            this.groupBox1.Controls.Add(this.labelPLCConnectStatus);
-            this.groupBox1.Controls.Add(this.btnPLCDisconnect);
-            this.groupBox1.Controls.Add(this.btnPLCConnect);
-            this.groupBox1.Controls.Add(this.txtBoxPLCIP);
-            this.groupBox1.Controls.Add(this.labelPLCIP);
-            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox1.Location = new System.Drawing.Point(656, 96);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(510, 308);
-            this.groupBox1.TabIndex = 21;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "PLC功能";
+            this.groupBoxPLC.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBoxPLC.Controls.Add(this.txtBoxPLC_DBNum);
+            this.groupBoxPLC.Controls.Add(this.labelDBNum);
+            this.groupBoxPLC.Controls.Add(this.btnPLCWriteDB);
+            this.groupBoxPLC.Controls.Add(this.labelPLCConnectStatus);
+            this.groupBoxPLC.Controls.Add(this.btnPLCDisconnect);
+            this.groupBoxPLC.Controls.Add(this.btnPLCConnect);
+            this.groupBoxPLC.Controls.Add(this.txtBoxPLCIP);
+            this.groupBoxPLC.Controls.Add(this.labelPLCIP);
+            this.groupBoxPLC.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.groupBoxPLC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBoxPLC.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.groupBoxPLC.Location = new System.Drawing.Point(656, 96);
+            this.groupBoxPLC.Name = "groupBoxPLC";
+            this.groupBoxPLC.Size = new System.Drawing.Size(510, 308);
+            this.groupBoxPLC.TabIndex = 21;
+            this.groupBoxPLC.TabStop = false;
+            this.groupBoxPLC.Text = "PLC功能";
             // 
             // txtBoxPLC_DBNum
             // 
@@ -387,28 +387,28 @@
             this.listBoxMsg.Size = new System.Drawing.Size(432, 319);
             this.listBoxMsg.TabIndex = 24;
             // 
-            // groupBox2
+            // groupBoxCNC
             // 
-            this.groupBox2.Controls.Add(this.btnDisconnect);
-            this.groupBox2.Controls.Add(this.labelCNCIP);
-            this.groupBox2.Controls.Add(this.txtBoxIP);
-            this.groupBox2.Controls.Add(this.btnConnect);
-            this.groupBox2.Controls.Add(this.labelViewListStatus);
-            this.groupBox2.Controls.Add(this.labelConnectStatus);
-            this.groupBox2.Controls.Add(this.labelOuputOffsetNum);
-            this.groupBox2.Controls.Add(this.btnReadValue);
-            this.groupBox2.Controls.Add(this.labelOuputOffsetType);
-            this.groupBox2.Controls.Add(this.labelCNCPath);
-            this.groupBox2.Controls.Add(this.labelOffsetNum);
-            this.groupBox2.Controls.Add(this.txtBoxCNCPath);
-            this.groupBox2.Controls.Add(this.labelOffsetType);
-            this.groupBox2.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox2.Location = new System.Drawing.Point(21, 96);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(629, 308);
-            this.groupBox2.TabIndex = 25;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "CNC功能";
+            this.groupBoxCNC.Controls.Add(this.btnDisconnect);
+            this.groupBoxCNC.Controls.Add(this.labelCNCIP);
+            this.groupBoxCNC.Controls.Add(this.txtBoxIP);
+            this.groupBoxCNC.Controls.Add(this.btnConnect);
+            this.groupBoxCNC.Controls.Add(this.labelViewListStatus);
+            this.groupBoxCNC.Controls.Add(this.labelConnectStatus);
+            this.groupBoxCNC.Controls.Add(this.labelOuputOffsetNum);
+            this.groupBoxCNC.Controls.Add(this.btnReadValue);
+            this.groupBoxCNC.Controls.Add(this.labelOuputOffsetType);
+            this.groupBoxCNC.Controls.Add(this.labelCNCPath);
+            this.groupBoxCNC.Controls.Add(this.labelOffsetNum);
+            this.groupBoxCNC.Controls.Add(this.txtBoxCNCPath);
+            this.groupBoxCNC.Controls.Add(this.labelOffsetType);
+            this.groupBoxCNC.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.groupBoxCNC.Location = new System.Drawing.Point(21, 96);
+            this.groupBoxCNC.Name = "groupBoxCNC";
+            this.groupBoxCNC.Size = new System.Drawing.Size(629, 308);
+            this.groupBoxCNC.TabIndex = 25;
+            this.groupBoxCNC.TabStop = false;
+            this.groupBoxCNC.Text = "CNC功能";
             // 
             // radioBtnZHTW
             // 
@@ -434,7 +434,6 @@
             this.radioBtnEN.TabIndex = 27;
             this.radioBtnEN.Text = "English";
             this.radioBtnEN.UseVisualStyleBackColor = true;
-            this.radioBtnEN.CheckedChanged += new System.EventHandler(this.radioBtnEN_CheckedChanged);
             // 
             // groupBox3
             // 
@@ -454,19 +453,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1215, 767);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBoxCNC);
             this.Controls.Add(this.listBoxMsg);
             this.Controls.Add(this.labelMsg);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxPLC);
             this.Controls.Add(this.listView_Result);
             this.Name = "MainForm";
             this.Text = "主程式";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBoxPLC.ResumeLayout(false);
+            this.groupBoxPLC.PerformLayout();
+            this.groupBoxCNC.ResumeLayout(false);
+            this.groupBoxCNC.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
@@ -504,12 +503,12 @@
         private System.Windows.Forms.TextBox txtBoxPLCIP;
         private System.Windows.Forms.Label labelPLCIP;
         private System.Windows.Forms.Button btnPLCWriteDB;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxPLC;
         private System.Windows.Forms.Label labelMsg;
         private System.Windows.Forms.ListBox listBoxMsg;
         private System.Windows.Forms.TextBox txtBoxPLC_DBNum;
         private System.Windows.Forms.Label labelDBNum;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBoxCNC;
         private System.Windows.Forms.RadioButton radioBtnZHTW;
         private System.Windows.Forms.RadioButton radioBtnEN;
         private System.Windows.Forms.GroupBox groupBox3;
