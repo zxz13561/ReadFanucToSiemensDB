@@ -1,5 +1,5 @@
 <h1>FanucToSiemens</h1>
-<p>Using Faunc Focas2 library to read CNC's parameter data, then transfer to Siemens PLC DB</p>
+<p>Using Faunc Focas2 library to read CNC's tools offset data, then transfer to Siemens PLC DB</p>
 <h2>Method</h2>
 </hr >
 
