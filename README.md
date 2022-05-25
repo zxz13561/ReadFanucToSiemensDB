@@ -1,4 +1,4 @@
-<h1>FanucToSiemens</h1>
+<h1>Fanuc To Siemens</h1>
 <p>Using Faunc Focas2 library to read CNC's tools offset data, then transfer to Siemens PLC DB</p>
 <h2>Method</h2>
 </hr >
