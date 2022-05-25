@@ -315,6 +315,8 @@ namespace FanucToSiemens
                 btnPLCWriteDB.Text = "寫入PLC DB";
                 groupBoxCNC.Text = "CNC功能";
                 groupBoxPLC.Text = "PLC功能";
+                labelMsg.Text = "執行訊息:";
+                groupBoxStatus.Text = "運行狀態";
             }
             else if (radioBtnEN.Checked)
             {
@@ -349,9 +351,10 @@ namespace FanucToSiemens
                 btnPLCWriteDB.Text = "Transfer to PLC DB";
                 groupBoxCNC.Text = "CNC Function";
                 groupBoxPLC.Text = "PLC Function";
+                labelMsg.Text = "Program Message:";
+                groupBoxStatus.Text = "Running Status";
             }
         }
         #endregion
-
     }
 }

@@ -66,7 +66,7 @@
             this.textBoxCNCPort = new System.Windows.Forms.TextBox();
             this.radioBtnZHTW = new System.Windows.Forms.RadioButton();
             this.radioBtnEN = new System.Windows.Forms.RadioButton();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBoxLanguage = new System.Windows.Forms.GroupBox();
             this.groupBoxStatus = new System.Windows.Forms.GroupBox();
             this.lblStatus_PLC = new System.Windows.Forms.Label();
             this.lightBall_PLC = new System.Windows.Forms.PictureBox();
@@ -76,7 +76,7 @@
             this.lightBall_CNC = new System.Windows.Forms.PictureBox();
             this.groupBoxPLC.SuspendLayout();
             this.groupBoxCNC.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.groupBoxLanguage.SuspendLayout();
             this.groupBoxStatus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lightBall_PLC)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lightBall_CNCData)).BeginInit();
@@ -467,17 +467,17 @@
             this.radioBtnEN.Text = "English";
             this.radioBtnEN.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // groupBoxLanguage
             // 
-            this.groupBox3.Controls.Add(this.radioBtnEN);
-            this.groupBox3.Controls.Add(this.radioBtnZHTW);
-            this.groupBox3.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.groupBox3.Location = new System.Drawing.Point(21, 12);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(247, 78);
-            this.groupBox3.TabIndex = 28;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "顯示語言/Language";
+            this.groupBoxLanguage.Controls.Add(this.radioBtnEN);
+            this.groupBoxLanguage.Controls.Add(this.radioBtnZHTW);
+            this.groupBoxLanguage.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.groupBoxLanguage.Location = new System.Drawing.Point(21, 12);
+            this.groupBoxLanguage.Name = "groupBoxLanguage";
+            this.groupBoxLanguage.Size = new System.Drawing.Size(247, 78);
+            this.groupBoxLanguage.TabIndex = 28;
+            this.groupBoxLanguage.TabStop = false;
+            this.groupBoxLanguage.Text = "顯示語言/Language";
             // 
             // groupBoxStatus
             // 
@@ -566,7 +566,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1215, 749);
             this.Controls.Add(this.groupBoxStatus);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBoxLanguage);
             this.Controls.Add(this.groupBoxCNC);
             this.Controls.Add(this.listBoxMsg);
             this.Controls.Add(this.labelMsg);
@@ -580,8 +580,8 @@
             this.groupBoxPLC.PerformLayout();
             this.groupBoxCNC.ResumeLayout(false);
             this.groupBoxCNC.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.groupBoxLanguage.ResumeLayout(false);
+            this.groupBoxLanguage.PerformLayout();
             this.groupBoxStatus.ResumeLayout(false);
             this.groupBoxStatus.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lightBall_PLC)).EndInit();
@@ -630,7 +630,7 @@
         private System.Windows.Forms.GroupBox groupBoxCNC;
         private System.Windows.Forms.RadioButton radioBtnZHTW;
         private System.Windows.Forms.RadioButton radioBtnEN;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBoxLanguage;
         private System.Windows.Forms.GroupBox groupBoxStatus;
         private System.Windows.Forms.Label lblStatus_CNC;
         private System.Windows.Forms.Label lblStatus_PLC;
